@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis with Web Scraping</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .container {
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for a lifted effect */
+            padding: 20px;
+            max-width: 600px; /* Limit width for better readability */
+            margin-top: 50px; /* Spacing from the top */
+        }
+        h1 {
+            color: #007bff; /* Bootstrap primary color */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            width: 100%; /* Button stretches full width */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <p class="text-center">Enter the URL of a webpage to analyze its sentiment:</p>
+        <form method="POST">
+            <div class="form-group">
+                <label for="url">URL:</label>
+                <input type="url" class="form-control" id="url" name="url" placeholder="Enter website URL">
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
